@@ -45,7 +45,7 @@ public class DummyContent {
         StringBuilder builder = new StringBuilder();
         builder.append("Details about Item: ").append(position);
         for (int i = 0; i < position; i++) {
-            builder.append("\nAndroid API Level: " + android.os.Build.VERSION.SDK_INT);
+            builder.append("\nAndroid API Level: ").append(android.os.Build.VERSION.SDK_INT);
         }
         return builder.toString();
     }
@@ -58,7 +58,7 @@ public class DummyContent {
         public final String content;
         public final String details;
 
-        public DummyItem(String id, String content, String details) {
+        DummyItem(String id, String content, String details) {
             this.id = id;
             this.content = content;
             this.details = details;
