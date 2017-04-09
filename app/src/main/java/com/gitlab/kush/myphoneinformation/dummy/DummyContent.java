@@ -47,6 +47,7 @@ public class DummyContent {
         for (int i = 0; i < position; i++) {
             builder.append("\nAndroid API Level: ").append(android.os.Build.VERSION.SDK_INT);
         }
+        builder.append("\nEnd of the line");
         return builder.toString();
     }
 
